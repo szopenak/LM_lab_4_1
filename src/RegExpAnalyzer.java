@@ -5,7 +5,7 @@ public class RegExpAnalyzer {
 	
 	static String ip = "(([0-1]?\\d\\d?|2[0-4]\\d|25[0-5])\\.){3}([0-1]?\\d\\d?|2[0-4]\\d|25[0-5])";
 	static String mac = "(\\p{XDigit}{2}\\:){5}\\p{XDigit}{2}";
-	static String mail = "(\\w|\\.){6}(\\w|\\.)*\\@\\w+\\.\\w+";
+	static String mail = "\\w(\\w|\\.)*\\@(\\w+\\.)+\\w+";
 	static String substraction = "\\-?([1-9]\\d*|0)(\\-{1,2}([1-9]\\d*|0))+";
 	static String complex_add = "([\\-]?(([1-9]\\d*)|0)\\+)*([\\-]?(([1-9]\\d*)|0)?j)(\\+([\\-]?(([1-9]\\d*)|0)?j?))*";
 	static String multiplication = "(\\-?(([1-9]\\d*)|0)(\\,\\d+)?)(\\*\\-?(([1-9]\\d*)|0)(\\,\\d+)?)+";
